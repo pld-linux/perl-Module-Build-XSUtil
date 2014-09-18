@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_vendorlib}/Module/Build/*.pm
-%{perl_vendorlib}/Module/Build/XSUtil
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
