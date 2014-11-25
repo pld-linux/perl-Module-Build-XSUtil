@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Module
 %define		pnam	Build-XSUtil
 %include	/usr/lib/rpm/macros.perl
@@ -14,14 +14,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	40045cdd0730d09abc05423f7c103adb
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Module-Build-XSUtil/
+URL:		http://search.cpan.org/dist/Module-Build-XSUtil/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Devel::CheckCompiler) >= 0.02
 BuildRequires:	perl(Cwd::Guard)
+BuildRequires:	perl(Devel::CheckCompiler) >= 0.02
 BuildRequires:	perl(File::Copy::Recursive)
 BuildRequires:	perl-Capture-Tiny
 %endif
