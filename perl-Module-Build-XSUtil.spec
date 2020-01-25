@@ -4,7 +4,6 @@
 
 %define		pdir	Module
 %define		pnam	Build-XSUtil
-%include	/usr/lib/rpm/macros.perl
 Summary:	Module::Build::XSUtil - A Module::Build class for building XS modules
 Name:		perl-Module-Build-XSUtil
 Version:	0.14
